@@ -51,6 +51,14 @@ Se evidenció que CI se ejecutó automáticamente y falló por resultados en pru
 <div align="left"><img src="./2_ci_github_actions/2.13_fail_ci.png" width="500"/></div>
 <div align="left"><img src="./2_ci_github_actions/2.14_fail_ci_logs.png" width="500"/></div>
 
+### 2.6 Falla en CI por error en validación de formato:
+Se modificó el pluggin del Checkstyle con el objetivo de generar falla en CI:
+<div align="left"><img src="./2_ci_github_actions/2.15_fail_checkstyle.png" width="250"/></div>
+
+Se evidenció que CI se ejecutó automáticamente y falló por falla en la verificación del Checkstyle:
+<div align="left"><img src="./2_ci_github_actions/2.16_fail_ci.png" width="500"/></div>
+<div align="left"><img src="./2_ci_github_actions/2.14_fail_ci_logs.png" width="500"/></div>
+
 ## 3. CI con Jenkins:
 ### 3.1 Configuración de entorno en Jenkins:
 Se realizó la configuración de Jenkins de acuerdo a los siguientes pasos:
@@ -129,3 +137,12 @@ Este commit corresponde al mismo usado en las pruebas con GitHub actions.
 Se evidenció que CI se ejecutó automáticamente y falló por resultados en pruebas de integración:
 <div align="left"><img src="./3_ci_jenkins/3.20_fail_ci.png" width="500"/></div>
 <div align="left"><img src="./3_ci_jenkins/3.21_fail_ci_details.png" width="500"/></div>
+
+### 3.5 Ejecución de CI ante cambios en master con falla en verificación de formato:
+Se modificó el pluggin del Checkstyle con el objetivo de generar falla en CI:
+<div align="left"><img src="./2_ci_github_actions/2.15_fail_checkstyle.png" width="250"/></div>
+Este commit corresponde al mismo usado en las pruebas con GitHub actions. 
+
+Se evidenció que CI se ejecutó automáticamente y falló por falla en la verificación del Checkstyle:
+<div align="left"><img src="./3_ci_jenkins/3.23_fail_ci_details.png" width="500"/></div>
+<div align="left"><img src="./3_ci_jenkins/3.22_fail_ci.png" width="500"/></div>
