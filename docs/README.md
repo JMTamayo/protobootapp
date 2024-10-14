@@ -39,8 +39,8 @@ Se aprobó el *Pull Request* anterior con el fin de realizar merge a rama master
 ### 3.1 Configuración de entorno en Jenkins:
 **PENDIENTE**
 
-### 3.2 Ejecución de CI ante PR:
-En primer lugar, se incrementó el porcentaje mínimo de cóverage requerido de **0.7** a **0.95** y se realizó *Pull Request* a rama master de nuevo para ejecutar el CI. El CI falló dado el incremento en el coverage:
+### 3.2 Ejecución de CI ante cambios en master:
+En primer lugar, se incrementó el porcentaje mínimo de cóverage requerido de **0.7** a **0.95**, se realizó y completó *Pull Request* a rama master de nuevo para ejecutar el CI. El CI falló dado el incremento en el coverage:
 <div align="left"><img src="./3_ci_jenkins/3.1_increase_coverage_ratio.png" width="250"/></div>
 <div align="left"><img src="./3_ci_jenkins/3.2_failed_ci_by_coverage.png" width="250"/></div>
 <div align="left"><img src="./3_ci_jenkins/3.3_failed_ci_by_coverage_details.png" width="250"/></div>
