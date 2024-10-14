@@ -43,6 +43,14 @@ Se evidenció que CI se ejecutó automáticamente y falló por resultados en pru
 <div align="left"><img src="./2_ci_github_actions/2.10_fail_ci.png" width="500"/></div>
 <div align="left"><img src="./2_ci_github_actions/2.11_fail_ci_logs.png" width="500"/></div>
 
+### 2.5 Falla en CI por error en pruebas de integración:
+Se modificó prueba unitaria en endpoint */hola*  con el objetivo de provocar el fallo en el el CI de la siguiente manera:
+<div align="left"><img src="./2_ci_github_actions/2.12_fail_integration_test.png" width="250"/></div>
+
+Se evidenció que CI se ejecutó automáticamente y falló por resultados en pruebas de integración:
+<div align="left"><img src="./2_ci_github_actions/2.13_fail_ci.png" width="500"/></div>
+<div align="left"><img src="./2_ci_github_actions/2.14_fail_ci_logs.png" width="500"/></div>
+
 ## 3. CI con Jenkins:
 ### 3.1 Configuración de entorno en Jenkins:
 Se realizó la configuración de Jenkins de acuerdo a los siguientes pasos:
@@ -112,3 +120,12 @@ Este commit corresponde al mismo usado en las pruebas con GitHub actions.
 Se evidenció que CI se ejecutó automáticamente y falló por resultados en pruebas unitarias:
 <div align="left"><img src="./3_ci_jenkins/3.18_fail_ci.png" width="500"/></div>
 <div align="left"><img src="./3_ci_jenkins/3.19_fail_ci_details.png" width="500"/></div>
+
+### 3.4 Ejecución de CI ante cambios en master con falla en pruebas de integración:
+Se modificó prueba unitaria en endpoint */hola*  con el objetivo de provocar el fallo en el el CI de la siguiente manera:
+<div align="left"><img src="./2_ci_github_actions/2.12_fail_integration_test.png" width="250"/></div>
+Este commit corresponde al mismo usado en las pruebas con GitHub actions. 
+
+Se evidenció que CI se ejecutó automáticamente y falló por resultados en pruebas de integración:
+<div align="left"><img src="./3_ci_jenkins/3.20_fail_ci.png" width="500"/></div>
+<div align="left"><img src="./3_ci_jenkins/3.21_fail_ci_details.png" width="500"/></div>
