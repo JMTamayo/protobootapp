@@ -146,3 +146,5 @@ Este commit corresponde al mismo usado en las pruebas con GitHub actions.
 Se evidenció que CI se ejecutó automáticamente y falló por falla en la verificación del Checkstyle:
 <div align="left"><img src="./3_ci_jenkins/3.23_fail_ci_details.png" width="500"/></div>
 <div align="left"><img src="./3_ci_jenkins/3.22_fail_ci.png" width="500"/></div>
+
+## 4. CD con AWS:
