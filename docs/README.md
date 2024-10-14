@@ -40,8 +40,42 @@ Se aprobó el *Pull Request* anterior con el fin de realizar merge a rama master
 **PENDIENTE**
 
 ### 3.2 Ejecución de CI ante cambios en master:
-En primer lugar, se incrementó el porcentaje mínimo de cóverage requerido de **0.7** a **0.95**, se realizó y completó *Pull Request* a rama master de nuevo para ejecutar el CI. El CI falló dado el incremento en el coverage:
+En primer lugar, se incrementó el porcentaje mínimo de coverage requerido de **0.7** a **0.95**, se realizó y completó *Pull Request* a rama master de nuevo para ejecutar el CI. El CI falló dado el incremento en el coverage:
 <div align="left"><img src="./3_ci_jenkins/3.1_increase_coverage_ratio.png" width="250"/></div>
-<div align="left"><img src="./3_ci_jenkins/3.2_failed_ci_by_coverage.png" width="250"/></div>
-<div align="left"><img src="./3_ci_jenkins/3.3_failed_ci_by_coverage_details.png" width="250"/></div>
-<div align="left"><img src="./3_ci_jenkins/3.4_failed_ci_by_coverage_logs.png" width="250"/></div>
+<div align="left"><img src="./3_ci_jenkins/3.2_failed_ci_by_coverage.png" width="500"/></div>
+<div align="left"><img src="./3_ci_jenkins/3.3_failed_ci_by_coverage_details.png" width="500"/></div>
+<div align="left"><img src="./3_ci_jenkins/3.4_failed_ci_by_coverage_logs.png" width="500"/></div>
+
+Se modificó porcentaje de coverage nuevamente de **0.95** a **0.7**, y posteriormente, se realizó commit a master para ejecutar CI en Jenkins. Se observa que el CI ejecutó de forma automática al detectar cambios en master en el mapeo que realiza cada 5 min:
+<div align="left"><img src="./3_ci_jenkins/3.5_decrease_coverage_ratio.png" width="250"/></div>
+<div align="left"><img src="./3_ci_jenkins/3.6_automatic_execution_after_5_min.png" width="250"/></div>
+<div align="left"><img src="./3_ci_jenkins/3.7_results_dashboard_for_success_build.png" width="500"/></div>
+
+A continuación se adjuntan imágenes de los resultados brindados por Jenkins en sus opciones predetermadas y en los pluggins configurados:
+
+#### Pooling:
+<div align="left"><img src="./3_ci_jenkins/3.10_results_pooling_log.png" width="500"/></div>
+
+#### Changes:
+<div align="left"><img src="./3_ci_jenkins/3.8_results_changes.png" width="500"/></div>
+
+#### Console:
+<div align="left"><img src="./3_ci_jenkins/3.9_results_console_output.png" width="500"/></div>
+
+#### Tests:
+<div align="left"><img src="./3_ci_jenkins/3.11_results_tests.png" width="500"/></div>
+
+#### Coverage:
+<div align="left"><img src="./3_ci_jenkins/3.12_results_coverage.png" width="500"/></div>
+
+#### Maven Warnings:
+<div align="left"><img src="./3_ci_jenkins/3.13_results_maven_warnings.png" width="500"/></div>
+
+#### PMD Warnings:
+<div align="left"><img src="./3_ci_jenkins/3.15_results_pmd_warnings.png" width="500"/></div>
+
+#### SpotBugs Warnings:
+<div align="left"><img src="./3_ci_jenkins/3.16_results_spotbugs_warnings.png" width="500"/></div>
+
+#### Blueocean:
+<div align="left"><img src="./3_ci_jenkins/3.17_results_blueocean.png" width="500"/></div>
