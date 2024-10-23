@@ -148,3 +148,32 @@ Se evidenció que CI se ejecutó automáticamente y falló por falla en la verif
 <div align="left"><img src="./3_ci_jenkins/3.22_fail_ci.png" width="500"/></div>
 
 ## 4. CD con AWS:
+### 4.1 Creación de ambientes:
+Usando el servicio Elastik Beanstalk, se crearon los ambientes de DEV y PRD para el despliegue de nuestra aplicación:
+<div align="left"><img src="./4_cd_aws/4.1_dev_env_running.png" width="500"/></div>
+<div align="left"><img src="./4_cd_aws/4.2_prd_env_running.png" width="500"/></div>
+<div align="left"><img src="./4_cd_aws/4.3_envs_running.png" width="500"/></div>
+
+### 4.2 Creación de Pipeline para despliegue contínuo:
+Usando el servicio CodePipeline, se creó pipeline para despliegue contínuo a partir de commit a master al integrarnos a GitHub mediante el uso de Webhook:
+<div align="left"><img src="./4_cd_aws/4.4_CD_pipeline.png" width="500"/></div>
+
+### 4.3 Ejecución de CD con merge a master:
+Se realizó commit a master donde se modificó la respuesta al saludo inicial. A continuación, se presenta la ejecución del pipeline ante dicho commit:
+<div align="left"><img src="./4_cd_aws/4.5_pipeline_running_after_commit.png" width="500"/></div>
+
+Los pasos Source y Build se ejecutaron correctamente, y por lo tanto, se procede al despliegue automáticamente a DEV de forma exitosa como se muestra a continuación:
+<div align="left"><img src="./4_cd_aws/4.6_deploy_to_dev_success.png" width="500"/></div>
+
+Posterior a la aprobación manual del despliegue a PRD, se lleva a cabo el despliegue final de forma exitosa:
+<div align="left"><img src="./4_cd_aws/4.7_deploy_to_prd_success.png" width="500"/></div>
+
+Se realizó request tipo GET al root path obteniendo como resultado lo siguiente:
+<div align="left"><img src="./4_cd_aws/4.8_successfull_response_PRD.png" width="500"/></div>
+
+### 4.3 Reportes en CodeBuild:
+En CodeBuild podemos acceder a diferentes reportes:
+<div align="left"><img src="./4_cd_aws/4.9_build_reports.png" width="500"/></div>
+
+### 4.4 Logs en CloudWatch:
+<div align="left"><img src="./4_cd_aws/4.10_cloudwatch_logs.png" width="500"/></div>
